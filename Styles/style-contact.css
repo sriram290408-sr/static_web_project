@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fcff;
+  color: #333;
+}
+
+.header {
+  background: url(../assets/banner.jpg) no-repeat center center/cover;
+  height: 420px;
+  display: flex;
+  justify-content: end;
+  color: white;
+  text-align: center;
+}
+
+.navbar {
+  background: #0077aa;
+  padding: 15px 0;
+  text-align: center;
+  margin: 2px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: large;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: yellow;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: larger;
+  width: auto;
+}
+
+.contact-section h2 {
+  color: #0077aa;
+  margin-bottom: 15px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #00aaff;
+  margin-bottom: 8px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: larger;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 12px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 12px;
+  background: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0077aa;
+}
+
+.footer {
+  background: #00aaff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 350px;
+  font-size: x-large;
+}

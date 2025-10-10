@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fcff;
+  color: #333;
+}
+
+.header {
+  background: url(../assets/banner.jpg) no-repeat center center/cover;
+  height: 420px;
+  display: flex;
+  justify-content: end;
+  color: white;
+  text-align: center;
+}
+
+.navbar {
+  background: #0077aa;
+  padding: 15px 0;
+  text-align: center;
+  margin: 2px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: large;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: yellow;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+}
+
+h1 {
+  text-align: center;
+  color: #0077aa;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.choices label {
+  background: #00aaff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.choices label:hover {
+  background: #0077aa;
+}
+
+.form-box {
+  display: none;
+  margin-top: 20px;
+}
+
+#festival:checked~.forms #festival-form,
+#sports:checked~.forms #sports-form,
+#meeting:checked~.forms #meeting-form,
+#talent:checked~.forms #talent-form {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0077aa;
+}
+
+.footer {
+  background: #00aaff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 250px;
+  font-size: x-large;
+}
