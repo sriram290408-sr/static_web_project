@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/google-form.css" />
+    <title>Event Participation Forms</title>
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="./user-profile.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./form.html">Issue</a>
+        <a href="./event.html">Events</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Event Participation Form</h1>
+
+      <input type="radio" id="festival" name="event" />
+      <input type="radio" id="sports" name="event" />
+      <input type="radio" id="meeting" name="event" />
+      <input type="radio" id="talent" name="event" />
+
+      <div class="choices">
+        <label for="festival">🎉 Festival Celebration</label>
+        <label for="sports">⚽ Sports Day</label>
+        <label for="meeting">🗣️ Community Meeting</label>
+        <label for="talent">🎤 Talent Show</label>
+      </div>
+
+      <div class="forms">
+        <!-- Festival -->
+        <form id="festival-form" class="form-box">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Apartment Number *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" required />
+          </div>
+          <div class="form-group">
+            <label>Participation *</label>
+            <select required>
+              <option value="">-- Select --</option>
+              <option>Dance</option>
+              <option>Singing</option>
+              <option>Decoration</option>
+              <option>Food Stalls</option>
+              <option>Audience</option>
+            </select>
+          </div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
+
+        <!-- Sports -->
+        <form id="sports-form" class="form-box">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Sport Category *</label>
+            <select required>
+              <option value="">-- Select --</option>
+              <option>Football</option>
+              <option>Cricket</option>
+              <option>Badminton</option>
+              <option>Running Race</option>
+              <option>Kids’ Games</option>
+            </select>
+          </div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
+
+        <!-- Meeting -->
+        <form id="meeting-form" class="form-box">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Will you attend? *</label>
+            <select required>
+              <option value="">-- Select --</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Topics you’d like to discuss</label>
+            <textarea rows="3"></textarea>
+          </div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
+
+        <!-- Talent -->
+        <form id="talent-form" class="form-box">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Talent Category *</label>
+            <select required>
+              <option value="">-- Select --</option>
+              <option>Singing</option>
+              <option>Dancing</option>
+              <option>Drama/Acting</option>
+              <option>Comedy</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Performance Duration</label>
+            <input type="text" placeholder="e.g. 5 minutes" />
+          </div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p><strong>SP Apartments</strong> – Where Comfort Meets Elegance</p>
+      <p>📍 Chennai-600001 | 📞 +91 9876543210 | ✉️ info@spapartments.com</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".forms form").forEach((form) => {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("✅ Your response has been submitted successfully!");
+          form.reset();
+        });
+      });
+    </script>
+  </body>
+</html>

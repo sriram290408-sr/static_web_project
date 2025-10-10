@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report an Issue - S.P.Apartments</title>
+    <link rel="stylesheet" href="../Styles/style-Form.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="./user-profile.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./form.html" class="active">Issue</a>
+        <a href="./event.html">Events</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="form-section">
+      <div class="form-box">
+        <h2>Submit Your Complaint</h2>
+        <p>
+          Please fill in the details below and our maintenance team will assist
+          you.
+        </p>
+
+        <form id="complaintForm" action="#" method="post">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" required />
+
+          <label>Apartment No.</label>
+          <input type="text" placeholder="e.g., B-402" required />
+
+          <label>Email</label>
+          <input type="email" placeholder="name@example.com" required />
+
+          <label>Phone</label>
+          <input type="tel" placeholder="+91 98765 43210" required />
+
+          <label>Category</label>
+          <select required>
+            <option disabled selected>Select one</option>
+            <option>Plumbing</option>
+            <option>Electrical</option>
+            <option>Pest Control</option>
+            <option>Water Supply</option>
+            <option>Other</option>
+          </select>
+
+          <label>Priority</label>
+          <select required>
+            <option disabled selected>Select one</option>
+            <option>Low</option>
+            <option>Normal</option>
+            <option>High</option>
+            <option>Emergency</option>
+          </select>
+
+          <label>Description</label>
+          <textarea
+            rows="5"
+            placeholder="Describe the issue..."
+            required
+          ></textarea>
+
+          <button type="reset" class="btn">Reset</button>
+          <button type="submit" class="btn">Submit Complaint</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p><strong>SP Apartments</strong> – Where Comfort Meets Elegance</p>
+      <p>📍 Chennai-600001 | 📞 +91 9876543210 | ✉️ info@spapartments.com</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("complaintForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("✅ Your complaint has been submitted successfully!");
+        });
+    </script>
+  </body>
+</html>

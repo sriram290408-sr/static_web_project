@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - S.P.Apartments</title>
+    <link rel="stylesheet" href="../Styles/style-contact.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="./user-profile.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./form.html">Issue</a>
+        <a href="./event.html">Events</a>
+        <a href="./contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+
+    <section class="contact-section">
+      <h1><u>Contact Us</u></h1>
+
+      <h2>We’d Love to Hear from You</h2>
+      <p>
+        If you have questions, suggestions, or feedback, please reach out to us:
+      </p>
+
+      <div class="contact-cards">
+        <div class="card">
+          <h3>📍 Address</h3>
+          <p>S.P.Apartments, Kannan Nagar, Chennai - 600001</p>
+        </div>
+        <div class="card">
+          <h3>📞 Phone</h3>
+          <p>+91 9876543210</p>
+        </div>
+        <div class="card">
+          <h3>✉️ Email</h3>
+          <p>info@spapartments.com</p>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name" required />
+
+        <label>Your Email</label>
+        <input type="email" placeholder="Enter your email" required />
+
+        <label>Message</label>
+        <textarea
+          rows="5"
+          placeholder="Type your message..."
+          required
+        ></textarea>
+
+        <button type="reset" class="btn">Reset</button>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p><strong>SP Apartments</strong> – Where Comfort Meets Elegance</p>
+      <p>📍 Chennai-600001 | 📞 +91 9876543210 | ✉️ info@spapartments.com</p>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("✅ Your message has been sent successfully!");
+        });
+    </script>
+  </body>
+</html>
